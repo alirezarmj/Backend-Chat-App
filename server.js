@@ -11,6 +11,7 @@ const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
     origin: "*", // Allow your Next.js client to connect
+    methods: ["GET", "POST"],
   },
 });
 
